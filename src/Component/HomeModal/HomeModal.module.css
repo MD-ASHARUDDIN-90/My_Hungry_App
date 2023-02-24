@@ -1,0 +1,131 @@
+.main {
+  width: 55%;
+  /* border: 1px solid red; */
+  height: 60vh;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+.mainHead {
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.iconTab {
+  display: flex;
+  align-items: center;
+}
+.iconTab h1 {
+  color: #fc8019;
+}
+
+.icon {
+  font-size: 4rem;
+  color: #fc8019;
+}
+.btn {
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: white;
+  border: none;
+  font-weight: 600;
+}
+.btn:hover{
+    color: #fc8019;
+}
+.btnSign {
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: black;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.midContent h1 {
+  font-size: 2.5rem;
+}
+.midContent h2 {
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+  margin-top: -1.5rem;
+}
+
+.inputBar {
+  border: 1px solid #fc8019;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: max-content;
+  margin-top: 3rem;
+}
+/* ===================input box search */
+.input {
+  width: 95%;
+  height: 7vh;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  padding-left: 1.5rem;
+  padding-right: 2rem;
+}
+.locate {
+  height: 7vh;
+  width: 50%;
+  border: 0px solid rgb(12, 12, 11);
+  display: flex;
+  align-items: center;
+  /* margin-left: 8rem; */
+}
+
+/* ========================================input serch end */
+.btn1 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: 1px 1px black;
+  height: 7vh;
+  width: 17vw;
+  background-color: #fc8019;
+  color: white;
+  border: none;
+}
+
+.footer {
+  margin-left: -6.5rem;
+}
+
+.footer h3{
+    color: rgb(66, 66, 66);
+    font-weight: 400;
+}
+
+/* popover div predicted places */
+.popOver{
+  background-color: whitesmoke;
+  position: absolute;
+  z-index: 99;
+  /* width: 40%; */
+  /* left: 4rem; */
+}
+
+.placesList{
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  gap: 2rem;
+  border-bottom: 1px dotted rgb(203, 203, 203);
+}
+.placesList p{
+  width: 31rem;
+}
+.placesListIcon{
+  font-size: 1.5rem;
+}

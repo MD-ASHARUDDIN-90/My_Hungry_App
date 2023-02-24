@@ -1,0 +1,19 @@
+.placesList{
+    /* position: absolute; */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    gap: 2rem;
+    border-bottom: 1px dotted rgb(203, 203, 203);
+  }
+  .placesList p{
+    width: 31rem;
+  }
+  .placesListIcon{
+    font-size: 1.5rem;
+  }
+  .listRow{
+    font-size: 1rem;
+  }

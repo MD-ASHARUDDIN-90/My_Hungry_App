@@ -1,0 +1,39 @@
+.input {
+    width: 95%;
+    height: 7vh;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+  }
+  .locate {
+    height: 7vh;
+    width: 50%;
+    border: 0px solid rgb(12, 12, 11);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* margin-left: 8rem; */
+  }
+
+  .locate:hover{
+    color: #fc8019;
+    text-shadow: 0.6px 0.6px black;
+    /* color: red; */
+  }
+  
+  .btn1 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 1px 1px black;
+    height: 7vh;
+    width: 17vw;
+    background-color: #fc8019;
+    color: white;
+    border: none;
+  }
+
+  /* =====================place lost */
+

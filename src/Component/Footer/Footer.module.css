@@ -1,0 +1,73 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+.footerContact{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
+    gap: 5rem;
+}
+.footerContact h3{
+    color: rgb(84, 84, 84);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.footerGoogleApphoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.footerGoogleApphoto img{
+height: 8vh;
+border: 1px solid white;
+border-radius: 10px;
+}
+
+.seperation{
+ 
+    border: 1px solid white;
+}
+.footerLast{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 100%; */
+    background-color: black;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* border: 2px solid red; */
+}
+.iconTab {
+    display: flex;
+    align-items: center;
+  }
+  .icon {
+    font-size: 4rem;
+    color: #ffffff;
+  }
+  .iconTab h1 {
+    color: #ffffff;
+  }
+  .footerLasttext{
+    font-size: 1.4rem;
+   
+  }
+  .footerIconWrap{
+    /* border: 1px solid; */
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+  
+    color: white;
+  }
+  .footerLastIcon{
+    font-size: 2rem;
+  }
