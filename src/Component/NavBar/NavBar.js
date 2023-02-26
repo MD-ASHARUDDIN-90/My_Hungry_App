@@ -6,8 +6,11 @@ import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { FiSearch, FiUser } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
-export default function NavBar() {
- 
+import { useRecoilValue } from "recoil";
+import { cartItem } from '../../Recoil/Recoil';
+export default function NavBar({cart}) {
+ const carts = useRecoilValue(cartItem)
+    
    
     return(
         <>
@@ -46,8 +49,10 @@ export default function NavBar() {
         </div>
 
         <div  className={style.subMain}>
+        <Link className={style.subMain} to='/cart'>
         <AiOutlineShoppingCart className={style.iconTwo}  />
-        <h3>Cart</h3>
+        <h3>Cart {carts?.length}</h3>
+        </Link>
         </div>
 
         </div>

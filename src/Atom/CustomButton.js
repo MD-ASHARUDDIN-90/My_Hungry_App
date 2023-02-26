@@ -1,7 +1,7 @@
-export default function CustomButton({buttonText ,className}) {
+export default function CustomButton({buttonText ,className ,onClick}) {
     return(
         <>
-        <button className={className}>{buttonText}</button>
+        <button onClick={onClick} className={className}>{buttonText}</button>
         </>
     )
 }

@@ -8,10 +8,13 @@ import AllRestroPages from './Pages/AllRestroPage/AllRestroPage';
 import HelpPage from './Pages/HelpPage/HelpPage';
 import SearchFoodPage from './Pages/SearchFoodPage/SearchFoodPage';
 import SingleRestroPage from './Pages/SingleRestaurantPage/SingleRestroPage';
+import CartPage from './Pages/CartPage/CartPage';
+import { RecoilRoot } from 'recoil';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+  <RecoilRoot>
     <BrowserRouter>
     <Routes>
     <Route path='/' element={<App/>} />
@@ -19,9 +22,10 @@ root.render(
     <Route path='/help' element={<HelpPage/>} />
     <Route path='/search' element={<SearchFoodPage/>} />
     <Route path='/singlerestropage' element={<SingleRestroPage/>} />
-    <Route path='/norestro' element={<h1>No Restro</h1>} />
+    <Route path='/cart' element={<CartPage/>} />
     </Routes>
     </BrowserRouter>
+    </RecoilRoot>
   </React.StrictMode>
 );
 

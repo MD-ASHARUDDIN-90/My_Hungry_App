@@ -1,0 +1,14 @@
+.main{
+    margin-top: 7rem;
+    /* border: 1px solid; */
+display: flex;
+flex-direction: column;
+align-items: center;
+  
+}
+
+.priceTotal{
+    display: flex;
+    
+    justify-content: space-around;
+}

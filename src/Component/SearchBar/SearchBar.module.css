@@ -11,13 +11,16 @@
   .locate {
     height: 7vh;
     width: 50%;
+    gap: 0.5rem;
     border: 0px solid rgb(12, 12, 11);
     display: flex;
     align-items: center;
     cursor: pointer;
     /* margin-left: 8rem; */
   }
-
+.icon{
+  font-size: 1.4rem;
+}
   .locate:hover{
     color: #fc8019;
     text-shadow: 0.6px 0.6px black;

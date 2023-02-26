@@ -41,7 +41,7 @@ export default function SearchBar({ setPredictedPlace }) {
       />
 
       <div onClick={handleLocation} className={style.locate}>
-        <TbCurrentLocation /> <p> Locate Me</p>
+        <TbCurrentLocation className={style.icon} /> <p> Locate Me</p>
       </div>
 
       <CustomButton className={style.btn1} buttonText="Find Food" />

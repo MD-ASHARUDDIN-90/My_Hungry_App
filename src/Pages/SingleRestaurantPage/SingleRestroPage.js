@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import { AiFillStar, AiTwotoneStar } from "react-icons/ai";
 import { MdCategory } from "react-icons/md";
+import CustomButton from "../../Atom/CustomButton";
 import Footer from "../../Component/Footer/Footer";
 import NavBar from "../../Component/NavBar/NavBar";
 import style from "./SingleRestro.module.css";
+import { cartItem } from "../../Recoil/Recoil";
+import { useRecoilState } from "recoil";
 export default function SingleRestroPage() {
   const [name, setName] = useState("Welcome To Hungry");
   const [city, setCity] = useState("");
@@ -15,6 +18,9 @@ export default function SingleRestroPage() {
   const [deleveryTime, setDeliveryTime] = useState("");
   const [discount, setDiscount] = useState([]);
   const [all, setAll] = useState([]);
+  const [cart, setCart] = useState([]);
+  const [cartList, setCartList] = useRecoilState(cartItem);  //n
+
 
   const clickRestro = JSON.parse(localStorage.getItem("clickedHotel"));
   const latitude = JSON.parse(localStorage.getItem("latitude"));
@@ -37,7 +43,8 @@ export default function SingleRestroPage() {
     setDiscount(
       data.data.cards[0].card.card.info.aggregatedDiscountInfo.descriptionList
     );
-    setStarRating(data.data.cards[0].card.card.info.avgRating);
+    setStarRating(data.data.cards[0].card.card.info.avgRatingString
+      );
     setCostTwo(data.data.cards[0].card.card.info.costForTwoMessage);
     setDeliveryTime(data.data.cards[0].card.card.info.sla.deliveryTime);
     console.log(
@@ -49,11 +56,22 @@ export default function SingleRestroPage() {
   }
   useEffect(() => {
     fetchClickRestro();
+    
   }, []);
 
+  function handleClick(y) {
+    if(!y.isAdd){
+      y.isAdd = true
+      console.log(y,"cart item added")
+      cart.push(y)
+      setCart([...cart])
+      setCartList([...cart])
+    }
+  }
+  console.log(cart,"added cart items")
   return (
     <>
-      <NavBar />
+      <NavBar cart={cart}/>
       <div className={style.restroInfo}>
         <img
           className={style.restroImg}
@@ -62,29 +80,40 @@ export default function SingleRestroPage() {
           alt="hotel pic"
         />
         <div className={style.restroName}>
+        
           <h1>{name}</h1>
           <h2>{area} </h2>
           <h2>{city}</h2>
-        </div>
-        <div className={style.rating}>
-          <h2>
-            <AiTwotoneStar className={style.icon} />
-            {starRating}
-          </h2>
-          <h2>Total Rating : {rating}</h2>
-          <h3>Cost {costTwo}</h3>
-          <h3>DeliverY Time {deleveryTime} mins</h3>
+         
         </div>
         <div>
           <h1 className={style.offerTxt}>Offers</h1>
           <div className={style.offer}>
             {discount.map((x) => (
-              <div>{x.meta}</div>
+              <div key={x}>{x.meta}</div>
             ))}
           </div>
         </div>
-      </div>
-      {all?.map((x) => (
+        </div>
+        <div className={style.rating}>
+        
+        <div>
+            <AiTwotoneStar className={style.icon} />
+            <span>  {starRating}</span>
+            </div>
+          <p className={style.reviewRate}>{rating}</p>
+          <p className={style.reviewRate}>Cost {costTwo}</p>
+          <p className={style.reviewRate}>Delivery Time {deleveryTime} mins</p>
+        </div>
+        
+     
+      {all?.slice(0).map((x) => (
+        <div>
+        {x.card.card.title ? 
+        <div className={style.section}>
+        <h3 >{x.card.card.title  }</h3> 
+        </div>
+        : "" }
         <div className={style.main}>
           {x.card.card.itemCards?.map((y) => (
             <div className={style.card}>
@@ -105,7 +134,7 @@ export default function SingleRestroPage() {
               <div>
                 <p className={style.head}>{y.card.info.name}</p>
                 <p className={style.head}>
-                  &#x20B9; {Number(y.card.info.price) / 100}
+                  &#x20B9; { !y.card.info.price ? Number(y.card.info.defaultPrice) / 100 : Number(y.card.info.price) / 100}
                 </p>
                 <p className={style.green}>
                   <AiFillStar />
@@ -119,8 +148,10 @@ export default function SingleRestroPage() {
                   {y.card.info.itemAttribute?.portionSize}
                 </p>
               </div>
+              <CustomButton onClick={()=>handleClick(y)} className={y.isAdd ?style.btn1 : style.btn} buttonText={"Add Item"}/>
             </div>
           ))}
+        </div>
         </div>
       ))}
       <Footer />

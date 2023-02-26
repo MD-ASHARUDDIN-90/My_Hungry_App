@@ -1,17 +1,38 @@
-.main{
+.btnBox{
+    margin-top: 6rem;
     display: flex;
-    /* width: 100%; */
-    flex-wrap: wrap;
+}
+
+.city{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
+    /* margin: 3rem; */
     margin-bottom: 3rem;
     margin-top: 1rem;
+    margin-left: 4rem;
+  
     /* padding: 2rem 5rem 2rem 5rem; */
     /* border: 1px solid; */
     /* gap: 1rem; */
     /* padding: 2rem; */
 }
 
-
+.btn{
+    background-color: #d97d0d;
+    color: white;
+    /* border:; */
+    border-radius: 20px 0px 20px 0px;
+    margin: 1rem 1rem;
+    width: 50%;
+    font-size: 1.2rem;
+    height: 6vh;
+}
 .card{
     border: 2px solid white;
     /* padding: 1rem; */
@@ -20,6 +41,7 @@
     display: inline-flex;
     flex-wrap: wrap;
   width: 20%;
+  height: max-content;
   justify-content: center;
   align-items: center;
     /* justify-content: center; */
@@ -30,12 +52,17 @@
 .cardBox{
     border: 1px solid;
    padding: 1rem;
-   /* width: 60%; */
+      /* width: 60%; */
 }
 .cardBox:hover{
     border: 1px solid rgb(125, 125, 125);
     background-color: rgb(204, 204, 204,0.2);
     box-shadow: 0px 0px 5px 5px grey;
+}
+.imgBox{
+    border: 0px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
 }
 .hotelName{
    /* border: 1px solid; */
@@ -44,6 +71,7 @@
 }
 .img{
     border: 1px solid;
+    border-radius: 10px;
     margin: auto;
     width: 220px;
     height: 180px;
