@@ -1,5 +1,6 @@
 .main{
     margin-top: 7rem;
+    margin-bottom: 6rem;
     /* border: 1px solid; */
 display: flex;
 flex-direction: column;
@@ -11,4 +12,20 @@ align-items: center;
     display: flex;
     
     justify-content: space-around;
+}
+.img{
+    width: 30px;
+}
+.itemsBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 1rem;
+}
+.items{
+    display: flex;
+    align-items: center;
+     gap: 3rem;
+     width: 60%
 }

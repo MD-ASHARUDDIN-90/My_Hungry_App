@@ -1,5 +1,5 @@
 .btnBox{
-    margin-top: 6rem;
+    margin-top: 7rem;
     display: flex;
 }
 
@@ -10,12 +10,14 @@
 }
 .main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
     justify-content: center;
     /* margin: 3rem; */
     margin-bottom: 3rem;
     margin-top: 1rem;
-    margin-left: 4rem;
+    margin-left: 3rem;
+
   
     /* padding: 2rem 5rem 2rem 5rem; */
     /* border: 1px solid; */
@@ -34,6 +36,10 @@
     height: 6vh;
     cursor: pointer;
 }
+.btn:active{
+    background-color: #d90d0d;
+}
+
 .card{
     border: 2px solid white;
     /* padding: 1rem; */
@@ -41,24 +47,27 @@
     /* height: 50vh; */
     display: inline-flex;
     flex-wrap: wrap;
-  width: 20%;
-  height: 60vh;
+  width: max-content;
+  /* height: max-content; */
   justify-content: center;
   align-items: center;
     /* justify-content: center; */
     flex-direction: column;
     margin-top: 1rem;
-    /* border: 1px solid; */ 
+    border: 1px solid; 
+    cursor: pointer;
 }
+
 .cardBox{
-    border: 1px solid;
+    /* border: 1px solid; */
    padding: 1rem;
       /* width: 60%; */
 }
-.cardBox:hover{
+.card:hover{
     border: 1px solid rgb(125, 125, 125);
-    background-color: rgb(204, 204, 204,0.2);
-    box-shadow: 0px 0px 5px 5px grey;
+    background-color: rgba(253, 114, 0, 0.2);
+    box-shadow: 0px 0px 5px 5px rgb(255, 165, 56);
+   
 }
 .imgBox{
     border: 0px solid rgb(255, 255, 255);

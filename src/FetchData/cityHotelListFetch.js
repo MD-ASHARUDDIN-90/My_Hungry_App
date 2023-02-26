@@ -2,7 +2,7 @@ async function cityHotelListFetch(value) {
   //after clicking on predicted place fetch data after place fetch
   console.log(value, "i m selectd place");
 
-  const res = await fetch(
+ const res = await fetch(
     `https://www.swiggy.com/dapi/misc/address-recommend?place_id=${value.place_id}`
   );
   const data = await res.json(); //{}
@@ -22,6 +22,7 @@ async function cityHotelListFetch(value) {
     "restaurant data allHotelData"
   );
   return fetchData.data?.cards[2].data?.data?.cards;
+  
   //   localStorage.setItem("allRestroDetail" ,JSON.stringify(fetchData.data?.cards[2].data?.data?.cards))
 }
 export default cityHotelListFetch;

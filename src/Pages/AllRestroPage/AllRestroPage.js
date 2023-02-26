@@ -87,7 +87,7 @@ export default function AllRestroPages() {
               <div className={style.imgBox}>
                 <img
                   className={style.img}
-                  width=""
+                  width="300px"
                   src={`https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${x.data.cloudinaryImageId}`}
                   alt="hotel_picture"
                 />

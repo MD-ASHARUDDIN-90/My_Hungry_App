@@ -13,12 +13,12 @@ export default function Footer(){
         <p>About us</p>
         <p>Team</p>
         <p>Careers</p>
-        <p>Swiggy Blog</p>
+        <p>Hungry Blog</p>
         <p>Bug Bounty</p>
-        <p>Swiggy One</p>
-        <p>Swiggy Corporate</p>
-        <p>Swiggy Instamart</p>
-        <p>Swiggy Genie</p>
+        <p>Hungry One</p>
+        <p>Hungry Corporate</p>
+        <p>Hungry Instamart</p>
+        <p>Hungry Genie</p>
         </div>
 
         <div>
@@ -36,8 +36,8 @@ export default function Footer(){
         <p>Cookie Policy</p>
         <p>Offer Terms</p>
         <p>Phishing & Fraud</p>
-        <p>Corporate – Swiggy Money Codes Terms and Conditions</p>
-        <p>Corporate - Swiggy Discount Voucher Terms and Conditions</p>
+        <p>Corporate – Hungry Money Codes Terms and Conditions</p>
+        <p>Corporate - Hungry Discount Voucher Terms and Conditions</p>
         </div>
 
         <div className={style.footerGoogleApphoto}>
@@ -66,7 +66,7 @@ export default function Footer(){
         <div className={style.footerLasttext}>
         &#169;
         {new Date().getFullYear()} 
-        &nbsp; Hungry
+        &nbsp; Hungry_Ashar
         </div>
 
 

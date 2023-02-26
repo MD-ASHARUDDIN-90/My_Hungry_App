@@ -35,7 +35,7 @@ export default function NavBar({cart}) {
 
         <div  className={style.subMain}>
         <RiPercentFill className={style.iconTwo}  />
-        <h3>Offers</h3>
+        <h3 onClick={()=>alert("This Feature Will be Added Soon...!")}>Offers</h3>
         </div>
 
         <div  className={style.subMain}>
@@ -45,7 +45,7 @@ export default function NavBar({cart}) {
 
         <div  className={style.subMain}>
         <FiUser className={style.iconTwo} />
-        <h3>Sign In</h3>
+        <h3 onClick={()=>alert("This Feature Will be Added Soon...!")}>Sign In</h3>
         </div>
 
         <div  className={style.subMain}>
