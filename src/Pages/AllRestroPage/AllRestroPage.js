@@ -49,24 +49,46 @@ export default function AllRestroPages() {
   return (
     <>
       <NavBar />
-      <div className={style.btnBox} >
-        <CustomButton className={style.btn} onClick={handleRating} buttonText="Rating 4+" />
-        <CustomButton className={style.btn} onClick={handleVeg} buttonText="Veg Restaurants" />
-        <CustomButton className={style.btn} onClick={handleNonVeg} buttonText="Non-Veg Restaurants" />
-        <CustomButton  className={style.btn} onClick={handleReset} buttonText="All Restaurants" />
+      <div className={style.btnBox}>
+        <CustomButton
+          className={style.btn}
+          onClick={handleRating}
+          buttonText="Rating 4+"
+        />
+        <CustomButton
+          className={style.btn}
+          onClick={handleVeg}
+          buttonText="Veg Restaurants"
+        />
+        <CustomButton
+          className={style.btn}
+          onClick={handleNonVeg}
+          buttonText="Non-Veg Restaurants"
+        />
+        <CustomButton
+          className={style.btn}
+          onClick={handleReset}
+          buttonText="All Restaurants"
+        />
       </div>
-      <p className={style.city}> All Your Favourite Restaurants in {list[0]?.data.slugs.city.toUpperCase()}</p>                        
+      {list[0]?.data.slugs.city ? 
+      <p className={style.city}>
+        {" "}
+        All Your Favourite Restaurants in{" "}
+        {list[0]?.data.slugs.city.toUpperCase()}
+      </p>
+      : ""}
       <div className={style.main}>
         {list.map((x, i) => (
           <div onClick={() => handleClick(x)} className={style.card} key={i}>
             <div className={style.cardBox}>
-            <div className={style.imgBox}>
-              <img
-                className={style.img}
-                width=""
-                src={`https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${x.data.cloudinaryImageId}`}
-                alt="hotel_picture"
-              />
+              <div className={style.imgBox}>
+                <img
+                  className={style.img}
+                  width=""
+                  src={`https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${x.data.cloudinaryImageId}`}
+                  alt="hotel_picture"
+                />
               </div>
 
               <div>
