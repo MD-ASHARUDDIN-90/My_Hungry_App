@@ -38,7 +38,7 @@ export default function HelpPage() {
               </h2>
               {x.isClick ? <GrSubtract className="icon"/> : <GrAdd className="icon" />}
             </div>
-            {x.isClick ? <h3 className="ans">{x.ans}</h3> : ''}
+            {x.isClick ? <h3 className={style.ans}>{x.ans}</h3> : ''}
           </div>
         </>
       ))}

@@ -71,13 +71,15 @@ export default function AllRestroPages() {
           buttonText="All Restaurants"
         />
       </div>
-      {list[0]?.data.slugs.city ? 
-      <p className={style.city}>
-        {" "}
-        All Your Favourite Restaurants in{" "}
-        {list[0]?.data.slugs.city.toUpperCase()}
-      </p>
-      : ""}
+      {list[0]?.data.slugs.city ? (
+        <p className={style.city}>
+          {" "}
+          ALL YOUR FAVOURITE RESTAURANTS IN{" "}
+          {list[0]?.data.slugs.city.toUpperCase()}
+        </p>
+      ) : (
+        ""
+      )}
       <div className={style.main}>
         {list.map((x, i) => (
           <div onClick={() => handleClick(x)} className={style.card} key={i}>

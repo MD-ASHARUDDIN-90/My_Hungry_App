@@ -13,6 +13,7 @@
 .link{
     text-decoration: none;
     cursor: pointer;
+    color: black;
 }
 .mainSecond{
     display: flex;
@@ -31,6 +32,7 @@
     gap: 0.5rem;
     cursor: pointer;
     text-decoration: none;
+    color: black;
     /* justify-content: space-around; */
     /* border-radius: 20px; */
 }
@@ -54,6 +56,9 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 .subMain h1{
     color: #fc8019;
@@ -67,6 +72,7 @@
 .icon{
     font-size: 2.5rem;
     color: #fc8019;
+    cursor: pointer;
 }
 .iconTwo{
     font-size: 1.5rem;

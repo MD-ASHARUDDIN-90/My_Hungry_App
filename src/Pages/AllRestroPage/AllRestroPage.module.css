@@ -10,7 +10,7 @@
 }
 .main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     /* margin: 3rem; */
     margin-bottom: 3rem;
@@ -32,6 +32,7 @@
     width: 50%;
     font-size: 1.2rem;
     height: 6vh;
+    cursor: pointer;
 }
 .card{
     border: 2px solid white;
@@ -41,7 +42,7 @@
     display: inline-flex;
     flex-wrap: wrap;
   width: 20%;
-  height: max-content;
+  height: 60vh;
   justify-content: center;
   align-items: center;
     /* justify-content: center; */
