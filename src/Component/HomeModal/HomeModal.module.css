@@ -134,19 +134,27 @@
  
   .main{
     width: 100%;
+    padding: 5rem;
+    margin-top: 10rem;
   }   
   .mainHead{
     width: 100%;
-  }   
+  } 
+  .footer {
+  
+    margin-left: 0;
+   }  
  
 }
 
 @media only screen and (max-width: 400px)   {
   .footer {
-   margin: auto;
+  
+   margin-left: 0;
   }
 .main{
   width: 100%;
+  padding: 5rem;
 }
 .icon {
   display: none;

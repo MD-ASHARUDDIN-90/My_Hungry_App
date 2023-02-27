@@ -75,10 +75,22 @@ border-radius: 10px;
   @media only screen and (max-width: 1300px)   {
     .footer{
       width: 100%;
+      display: none;
     }
     .footerGoogleApphoto{
       display: none;
     }
-       
-   
+    .footerLast{
+      display: none
+    }
+        
+}
+
+@media only screen and (max-width: 489px)   {
+  .footer {
+   display: none;
+  }
+  .footerLast{
+    display: none
+  }
 }
