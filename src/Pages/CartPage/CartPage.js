@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
-import { AiFillStar } from "react-icons/ai";
-import { MdCategory } from "react-icons/md";
+import { useState } from "react";
+
 import CustomButton from "../../Atom/CustomButton";
 import NavBar from "../../Component/NavBar/NavBar";
 import style from "./CartPage.module.css";

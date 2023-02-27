@@ -1,8 +1,3 @@
-import { IoFastFoodOutline } from "react-icons/io5";
-import { FiFacebook } from "react-icons/fi";
-import { FaPinterestP } from "react-icons/fa";
-import { BsInstagram } from "react-icons/bs";
-import { BsTwitter } from "react-icons/bs";
 import HomeModal from "../../Component/HomeModal/HomeModal";
 import style from './HomePage.module.css'
 import Footer from "../../Component/Footer/Footer";

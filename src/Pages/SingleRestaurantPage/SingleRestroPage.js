@@ -54,6 +54,7 @@ export default function SingleRestroPage() {
   }
   useEffect(() => {
     fetchClickRestro();
+    // eslint-disable-next-line
   }, []);
 
   function handleClick(y) {
