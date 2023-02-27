@@ -9,6 +9,7 @@ import { cartItem } from "../../Recoil/Recoil";
 import { useSetRecoilState } from "recoil";
 export default function SingleRestroPage() {
   const [name, setName] = useState("Welcome To Hungry");
+  const [restroInfo, setRestroInfo] = useState({});
   const [city, setCity] = useState("");
   const [img, setImg] = useState("");
   const [rating, setRating] = useState("");
@@ -24,7 +25,7 @@ export default function SingleRestroPage() {
   const clickRestro = JSON.parse(localStorage.getItem("clickedHotel"));
   const latitude = JSON.parse(localStorage.getItem("latitude"));
   const longitude = JSON.parse(localStorage.getItem("longitude"));
-  console.log(clickRestro.data.id, "singleRestro");
+  // console.log(clickRestro.data.id, "singleRestro");
   const restaurantId = clickRestro.data.id;
 
   async function fetchClickRestro() {
@@ -32,24 +33,27 @@ export default function SingleRestroPage() {
       `https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=${latitude}&lng=${longitude}&restaurantId=${restaurantId}&submitAction=ENTER`
     );
     const data = await res.json();
-    console.log(data, "sigle hotem all menu"); //
-    console.log(data.data.cards[0].card.card.info, "info"); //info of restro
-    setName(data.data.cards[0].card.card.info.name);
-    setImg(data.data.cards[0].card.card.info.cloudinaryImageId);
-    setCity(data.data.cards[0].card.card.info.city);
-    setArea(data.data.cards[0].card.card.info.areaName);
-    setRating(data.data.cards[0].card.card.info.totalRatingsString);
-    setDiscount(
-      data.data.cards[0].card.card.info.aggregatedDiscountInfo.descriptionList
-    );
-    setStarRating(data.data.cards[0].card.card.info.avgRatingString);
-    setCostTwo(data.data.cards[0].card.card.info.costForTwoMessage);
-    setDeliveryTime(data.data.cards[0].card.card.info.sla.deliveryTime);
-    console.log(
-      data.data.cards[3].groupedCard.cardGroupMap.REGULAR.cards,
-      "mapping",
-      "food original"
-    );
+    // console.log(data, "sigle hotem all menu"); //
+    // console.log(data.data.cards[0].card.card.info, "info"); //info of restro
+    //==============================================//
+    setRestroInfo({
+      name : data.data.cards[0].card.card.info.name,
+      img : data.data.cards[0].card.card.info.cloudinaryImageId,
+      city : data.data.cards[0].card.card.info.city,
+      area : data.data.cards[0].card.card.info.areaName,
+      rating : data.data.cards[0].card.card.info.totalRatingsString,
+      discount : data.data.cards[0].card.card.info.aggregatedDiscountInfo.descriptionList,
+      startRating : data.data.cards[0].card.card.info.avgRatingString,
+      costTwo : data.data.cards[0].card.card.info.costForTwoMessage,
+      deleveryTime : data.data.cards[0].card.card.info.sla.deliveryTime
+    })
+  
+   
+    // console.log(
+    //   data.data.cards[3].groupedCard.cardGroupMap.REGULAR.cards,
+    //   "mapping",
+    //   "food original"
+    // );
     setAll(data.data.cards[3].groupedCard.cardGroupMap.REGULAR.cards); // try for all card
   }
   useEffect(() => {
@@ -60,13 +64,13 @@ export default function SingleRestroPage() {
   function handleClick(y) {
     if (!y.isAdd) {
       y.isAdd = true;
-      console.log(y, "cart item added");
+      // console.log(y, "cart item added");
       cart.push(y);
       setCart([...cart]);
       setCartList([...cart]);
     }
   }
-  console.log(cart, "added cart items");
+  // console.log(cart, "added cart items");
   return (
     <>
       <NavBar cart={cart} />
@@ -77,18 +81,18 @@ export default function SingleRestroPage() {
         <img
           className={style.restroImg}
           width=""
-          src={`https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${img}`}
+          src={`https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${restroInfo.img}`}
           alt="hotel pic"
         />
         <div className={style.restroName}>
-          <h1>{name}</h1>
-          <h2>{area} </h2>
-          <h2>{city}</h2>
+          <h1>{restroInfo.name}</h1>
+          <h2>{restroInfo.area} </h2>
+          <h2>{restroInfo.city}</h2>
         </div>
         <div>
           <h1 className={style.offerTxt}>Offers</h1>
           <div className={style.offer}>
-            {discount.map((x, i) => (
+            {restroInfo.discount?.map((x, i) => (
               <div key={i}>{x.meta}</div>
             ))}
           </div>
@@ -97,17 +101,17 @@ export default function SingleRestroPage() {
       <div className={style.rating}>
         <div>
           <AiTwotoneStar className={style.icon} />
-          <span> {starRating}</span>
+          <span> {restroInfo.starRating}</span>
         </div>
-        <p className={style.reviewRate}>{rating}</p>
-        <p className={style.reviewRate}>Cost {costTwo}</p>
-        <p className={style.reviewRate}>Delivery Time {deleveryTime} mins</p>
+        <p className={style.reviewRate}>{restroInfo.rating}</p>
+        <p className={style.reviewRate}>Cost {restroInfo.costTwo}</p>
+        <p className={style.reviewRate}>Delivery Time {restroInfo.deleveryTime} mins</p>
       </div>
       {
         //=============foods menu items=========================//
       }
       {all?.slice(0).map((x, i) => (
-        <div>
+        <div key={i}>
           {x.card.card.title ? (
             <div key={i} className={style.section}>
               <h3>{x.card.card.title}</h3>
@@ -116,8 +120,8 @@ export default function SingleRestroPage() {
             ""
           )}
           <div className={style.main}>
-            {x.card.card.itemCards?.map((y) => (
-              <div className={style.card}>
+            {x.card.card.itemCards?.map((y,i) => (
+              <div key={i} className={style.card}>
                 {y.card.info.imageId ? (
                   <img
                     className={style.img}

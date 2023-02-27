@@ -8,6 +8,7 @@ import style from "./SearchFoodPage.module.css";
 export default function SearchFoodPage() {
   const [value, setValue] = useState("");
   const [list, setList] = useState([]);
+  const [bucketList, setBucketList] = useState([]);
   async function captureValue(e) {
     setValue(e.target.value);
   }
@@ -22,6 +23,11 @@ export default function SearchFoodPage() {
     return () => clearTimeout(getData); //clear instance of useEffect
   }, [value]);
 
+
+  const handleClick=(x)=>{
+    setBucketList([x,...bucketList])
+    alert(`${x.text.slice(0,15)} added in your bucket list (${bucketList.length})`)
+  }
   return (
     <>
       <NavBar />
@@ -55,13 +61,9 @@ export default function SearchFoodPage() {
           </div>
         ) : (
           <div className={style.foods}>
-            {list?.data?.suggestions?.map(
-              (
-                x,
-                i //ask doubt about key
-              ) => (
+            {list?.data?.suggestions?.map((x,i)=> (
                 <>
-                  <div className={style.foodList} key={i}>
+                  <div onClick={()=>handleClick(x)} className={style.foodList} key={x.cloudinaryId}>
                     <img
                       className={style.imagesSeacrh}
                       width="65px"

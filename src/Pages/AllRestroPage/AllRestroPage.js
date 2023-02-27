@@ -13,13 +13,13 @@ export default function AllRestroPages() {
   useEffect(() => {
     if (localStorage.getItem("allRestroDetail")) {
       const allRestroData = JSON.parse(localStorage.getItem("allRestroDetail"));
-      console.log(allRestroData, "restro page pr all data of rstro aya kya ?");
+      // console.log(allRestroData, "restro page pr all data of rstro aya kya ?");
       setList(allRestroData);
     }
   }, []);
 
   const handleClick = (x) => {
-    console.log(x, "single restro page");
+    // console.log(x, "single restro page");
     localStorage.setItem("clickedHotel", JSON.stringify(x));
     navigate("/singlerestropage");
   };
@@ -45,7 +45,7 @@ export default function AllRestroPages() {
     setList(JSON.parse(localStorage.getItem("allRestroDetail")));
   }
 
-  console.log(sort, "srted");
+  // console.log(sort, "srted");
   return (
     <>
       <NavBar />

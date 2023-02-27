@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import CustomButton from "../../Atom/CustomButton";
 import NavBar from "../../Component/NavBar/NavBar";
 import style from "./CartPage.module.css";
@@ -8,7 +7,6 @@ import { useRecoilState } from "recoil";
 import Footer from "../../Component/Footer/Footer";
 export default function CartPage() {
   const [carts, setCarts] = useRecoilState(cartItem);
-
   const [list, setList] = useState(carts);
   let sum = 0;
   for (let i = 0; i < carts.length; i++) {
@@ -19,16 +17,20 @@ export default function CartPage() {
     }
   }
   const [price, setPrice] = useState(sum / 100);
-  console.log(carts, "recoil cart");
+  // console.log(carts, "recoil cart");
 
-  function handleDelete(y,i) {
-    const _carts = [...carts]
-    _carts.splice(i,1)
+  function handleDelete(y, i) {
+    const _carts = [...carts];
+    _carts.splice(i, 1);
     setList([..._carts]);
     setCarts([..._carts]);
     setPrice(price - y.card.info.price / 100);
   }
-
+  function handleCheckout() {
+    price > 0
+      ? alert(`Your order has been placed and your bill amount is ${price}/-Rs`)
+      : alert(`Choose The Items First`);
+  }
   return (
     <>
       <NavBar />
@@ -40,8 +42,11 @@ export default function CartPage() {
           >
             {list.map((y, i) => (
               <>
-                <div className={style.itemsBox}>
-                  <div className={style.items} style={{ display: "flex", gap: "3rem", width: "60%" }}>
+                <div key={y.card.info.imageId} className={style.itemsBox}>
+                  <div
+                    className={style.items}
+                    style={{ display: "flex", gap: "3rem", width: "60%" }}
+                  >
                     {y.card.info.imageId ? (
                       <img
                         className={style.img}
@@ -63,14 +68,14 @@ export default function CartPage() {
                   </div>
 
                   <p>
-                    {" "}
-                    &#x20B9;{" "}
+                    Cost : &#x20B9;{" "}
                     {!y.card.info.price
                       ? Number(y.card.info.defaultPrice) / 100
                       : Number(y.card.info.price) / 100}
                   </p>
                   <CustomButton
-                    onClick={() => handleDelete(y,i)}
+                    className={style.btn}
+                    onClick={() => handleDelete(y, i)}
                     buttonText="Remove"
                   />
                 </div>
@@ -81,9 +86,12 @@ export default function CartPage() {
               <h2>&#x20B9; {price}</h2>
             </div>
           </div>
+          <CustomButton
+            onClick={handleCheckout}
+            className={style.checkBtn}
+            buttonText="Checkout"
+          />
         </div>
-
-        <div></div>
       </div>
       <Footer />
     </>

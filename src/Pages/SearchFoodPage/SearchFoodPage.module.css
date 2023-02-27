@@ -43,6 +43,7 @@
     gap: 2rem;
     padding: 0.1rem 0.5rem;
   align-items: center;
+  margin-bottom: 2rem;
 }
 .foodList:hover{
     border: 1px solid rgb(125, 125, 125);

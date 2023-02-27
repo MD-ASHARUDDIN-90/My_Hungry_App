@@ -24,7 +24,7 @@ export default function SearchBar({ setPredictedPlace }) {
         .then((res) => res.json())
         .then((data) => setPredictedPlace(data?.data));
     }, 1000);
-    return () => clearTimeout(getData);
+    return () => clearTimeout(getData); 
   }, [search]);
   //======================locatte me function (location fetch data)=================//
   async function showPosition(position) {
@@ -55,7 +55,7 @@ export default function SearchBar({ setPredictedPlace }) {
         <TbCurrentLocation className={style.icon} /> <p> Locate Me</p>
       </div>
 
-      <CustomButton className={style.btn1} buttonText="Find Food" />
+      <CustomButton className={style.btn1} buttonText="Hungry" />
 
       {}
     </>

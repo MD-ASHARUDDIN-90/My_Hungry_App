@@ -7,7 +7,7 @@ export default function PredictedPlace({ predictedPlace }) {
   async function handleClick(x) {
     //=================
     const data = await cityHotelListFetch(x);
-    console.log(data, "geeting from all hoten in predicted place");
+    // console.log(data, "geeting from all hoten in predicted place");
 
     localStorage.setItem("allRestroDetail", JSON.stringify(data));
     navigate("/restaurant");

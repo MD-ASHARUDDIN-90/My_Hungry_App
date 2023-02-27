@@ -139,6 +139,7 @@ margin: 0.5rem;
     border-radius: 10px;
     color: #ffffff;
     text-shadow: 1px 1px black;
+    cursor: pointer;
 }
 .btn1{
     background-color: #f0330d;
@@ -147,6 +148,7 @@ margin: 0.5rem;
     border-radius: 10px;
     color: #ffffff;
     text-shadow: 1px 1px black;
+    cursor: pointer;
 }
 
 

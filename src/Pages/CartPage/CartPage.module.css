@@ -29,10 +29,23 @@ align-items: center;
      gap: 3rem;
      width: 60%
 }
-
+.btn{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.checkBtn{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: rgb(203, 136, 11);
+    font-size: 1.1rem;
+}
 @media only screen and (max-width: 600px)   {
  
     .itemsBox{
         flex-direction: column;
+        flex-wrap: wrap;
+        /* border: 1px solid; */
     }
     }
