@@ -21,7 +21,7 @@ export default function NavBar({cart}) {
         <h1>Hungry</h1>
         </div>
         </Link>
-
+        <div className={style.bigSecond}> 
         <div className={style.mainSecond}>
         <div >
         <Link className={style.input}  to="/search">
@@ -48,13 +48,15 @@ export default function NavBar({cart}) {
         <h3 onClick={()=>alert("This Feature Will be Added Soon...!")}>Sign In</h3>
         </div>
 
+
+        </div>
+        
         <div  className={style.subMain}>
         <Link className={style.subMain} to='/cart'>
         <AiOutlineShoppingCart className={style.iconTwo}  />
         <h3>Cart {carts?.length}</h3>
         </Link>
         </div>
-
         </div>
         </div>
         </>

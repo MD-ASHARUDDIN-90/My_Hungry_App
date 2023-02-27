@@ -89,3 +89,99 @@ position : absolute;
     display: flex;
     align-items: center;
 }
+
+.bigSecond{
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* ================================================================= */
+@media screen and (max-width : 785px) {
+    
+
+.main{
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0px 0px 5px 5px rgb(187, 187, 187);
+}
+.link{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+.mainSecond{
+    display: none;
+     
+    /* border: 1px solid; */
+    /* width: 50%; */
+}
+.input{
+    height: 5vh;
+    /* border: 1px solid rgb(188, 188, 188); */
+    /* width: 36%; */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    /* justify-content: space-around; */
+    /* border-radius: 20px; */
+}
+
+.input:hover{
+   
+    color: #fc8019;
+}
+.iconSearch{
+    font-size: 1.5rem;
+}
+
+.inputBox{
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* width: 46%; */
+}
+.subMain{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.subMain h1{
+    color: #fc8019;
+}
+.subMain:hover{
+    color: #fc8019;
+}
+.subMain h3{
+   font-weight: 400;
+}
+.icon{
+    font-size: 2.5rem;
+    color: #fc8019;
+    cursor: pointer;
+}
+.iconTwo{
+    font-size: 1.5rem;
+}
+
+.predictedFood{
+    background-color: rgb(175, 175, 175);
+padding: 1rem;
+position : absolute;
+ top : 4rem;
+ right :38rem
+}
+}

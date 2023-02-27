@@ -49,6 +49,7 @@ export default function AllRestroPages() {
   return (
     <>
       <NavBar />
+      <div className={style.hotelMainBox} >
       <div className={style.btnBox}>
         <CustomButton
           className={style.btn}
@@ -137,6 +138,7 @@ export default function AllRestroPages() {
             </div>
           </div>
         ))}
+      </div>
       </div>
       <Footer />
     </>

@@ -1,16 +1,17 @@
-.btnBox{
+.btnBox {
     margin-top: 7rem;
     display: flex;
 }
 
-.city{
+.city {
     text-align: center;
     font-size: 1.3rem;
     font-weight: 500;
 }
-.main{
+
+.main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     justify-content: center;
     /* margin: 3rem; */
@@ -18,14 +19,14 @@
     margin-top: 1rem;
     margin-left: 3rem;
 
-  
+
     /* padding: 2rem 5rem 2rem 5rem; */
     /* border: 1px solid; */
     /* gap: 1rem; */
     /* padding: 2rem; */
 }
 
-.btn{
+.btn {
     background-color: #d97d0d;
     color: white;
     /* border:; */
@@ -36,106 +37,1102 @@
     height: 6vh;
     cursor: pointer;
 }
-.btn:active{
+
+.btn:active {
     background-color: #d90d0d;
 }
 
-.card{
+.card {
     border: 2px solid white;
     /* padding: 1rem; */
     display: flex;
     /* height: 50vh; */
     display: inline-flex;
     flex-wrap: wrap;
-  width: max-content;
-  /* height: max-content; */
-  justify-content: center;
-  align-items: center;
+    width: max-content;
+    /* height: max-content; */
+    justify-content: center;
+    align-items: center;
     /* justify-content: center; */
     flex-direction: column;
     margin-top: 1rem;
-    border: 1px solid; 
+    border: 1px solid;
     cursor: pointer;
 }
 
-.cardBox{
+.cardBox {
     /* border: 1px solid; */
-   padding: 1rem;
-      /* width: 60%; */
+    padding: 1rem;
+    /* width: 60%; */
 }
-.card:hover{
+
+.card:hover {
     border: 1px solid rgb(125, 125, 125);
     background-color: rgba(253, 114, 0, 0.2);
     box-shadow: 0px 0px 5px 5px rgb(255, 165, 56);
-   
+
 }
-.imgBox{
+
+.imgBox {
     border: 0px solid rgb(255, 255, 255);
     display: flex;
     justify-content: center;
 }
-.hotelName{
-   /* border: 1px solid; */
-   width: 15rem;
-   height: 8vh;
+
+.hotelName {
+    /* border: 1px solid; */
+    width: 15rem;
+    height: 8vh;
 }
-.img{
+
+.img {
     border: 1px solid;
     border-radius: 10px;
     margin: auto;
     width: 220px;
     height: 180px;
 }
-.cuisinesWrap{
+
+.cuisinesWrap {
     /* border: 1px solid; */
     display: flex;
     gap: 0.2rem;
     /* width: 100%; */
 }
-.cuisines{
+
+.cuisines {
     /* display: flex; */
     flex-direction: row;
     font-size: 0.8rem;
     color: rgb(134, 134, 134);
     text-shadow: 0.8px 0.8px black;
-     width: max-content;
+    width: max-content;
 }
-.mainFotter{
+
+.mainFotter {
     display: flex;
     flex-direction: column;
     gap: 0.5;
 }
-.avgPriceWrap{
+
+.avgPriceWrap {
     /* border: 1px solid; */
     display: flex;
     gap: 1rem;
     /* justify-content: space-between; */
     padding: 0.5rem;
 }
-.avgRating{
+
+.avgRating {
     /* border: 1px solid; */
     color: white;
-    background-color:#db7c38 ;
+    background-color: #db7c38;
     /* width: 3rem; */
 }
-.avgRatingTwo{
+
+.avgRatingTwo {
     /* border: 1px solid; */
     color: white;
-    background-color:#48c479;
+    background-color: #48c479;
 }
-.iconPercent{
+
+.iconPercent {
     font-size: 1.5rem;
 }
-.offers{
+
+.offers {
     display: flex;
     gap: 0.3rem;
     align-items: center;
     color: #8a584b;
     font-weight: 600;
 }
-.offers span{
+
+.offers span {
     font-size: 0.9rem;
 }
-.price{
-font-size: 0.8rem;
+
+.price {
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width : 1400px) {
+    .btnBox {
+        margin-top: 7rem;
+        display: flex;
+    }
+
+    .city {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        justify-content: center;
+        /* margin: 3rem; */
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+
+
+        /* padding: 2rem 5rem 2rem 5rem; */
+        /* border: 1px solid; */
+        /* gap: 1rem; */
+        /* padding: 2rem; */
+    }
+
+    .btn {
+        background-color: #d97d0d;
+        color: white;
+        /* border:; */
+        border-radius: 20px 0px 20px 0px;
+        margin: 1rem 1rem;
+        width: 50%;
+        font-size: 1.2rem;
+        height: 6vh;
+        cursor: pointer;
+    }
+
+    .btn:active {
+        background-color: #d90d0d;
+    }
+
+    .card {
+        border: 2px solid white;
+        /* padding: 1rem; */
+        display: flex;
+        /* height: 50vh; */
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: max-content;
+        /* height: max-content; */
+        justify-content: center;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+        margin-top: 1rem;
+        border: 1px solid;
+        cursor: pointer;
+    }
+
+    .cardBox {
+        /* border: 1px solid; */
+        padding: 1rem;
+        /* width: 60%; */
+    }
+
+    .card:hover {
+        border: 1px solid rgb(125, 125, 125);
+        background-color: rgba(253, 114, 0, 0.2);
+        box-shadow: 0px 0px 5px 5px rgb(255, 165, 56);
+
+    }
+
+    .imgBox {
+        border: 0px solid rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+    }
+
+    .hotelName {
+        /* border: 1px solid; */
+        width: 15rem;
+        height: 8vh;
+    }
+
+    .img {
+        border: 1px solid;
+        border-radius: 10px;
+        margin: auto;
+        width: 220px;
+        height: 180px;
+    }
+
+    .cuisinesWrap {
+        /* border: 1px solid; */
+        display: flex;
+        gap: 0.2rem;
+        /* width: 100%; */
+    }
+
+    .cuisines {
+        /* display: flex; */
+        flex-direction: row;
+        font-size: 0.8rem;
+        color: rgb(134, 134, 134);
+        text-shadow: 0.8px 0.8px black;
+        width: max-content;
+    }
+
+    .mainFotter {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5;
+    }
+
+    .avgPriceWrap {
+        /* border: 1px solid; */
+        display: flex;
+        gap: 1rem;
+        /* justify-content: space-between; */
+        padding: 0.5rem;
+    }
+
+    .avgRating {
+        /* border: 1px solid; */
+        color: white;
+        background-color: #db7c38;
+        /* width: 3rem; */
+    }
+
+    .avgRatingTwo {
+        /* border: 1px solid; */
+        color: white;
+        background-color: #48c479;
+    }
+
+    .iconPercent {
+        font-size: 1.5rem;
+    }
+
+    .offers {
+        display: flex;
+        gap: 0.3rem;
+        align-items: center;
+        color: #8a584b;
+        font-weight: 600;
+    }
+
+    .offers span {
+        font-size: 0.9rem;
+    }
+
+    .price {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width : 1115px){
+    .btnBox {
+        margin-top: 7rem;
+        display: flex;
+    }
+
+    .city {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr;
+
+        justify-content: center;
+        /* margin: 3rem; */
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+
+
+        /* padding: 2rem 5rem 2rem 5rem; */
+        /* border: 1px solid; */
+        /* gap: 1rem; */
+        /* padding: 2rem; */
+    }
+
+    .btn {
+        background-color: #d97d0d;
+        color: white;
+        /* border:; */
+        border-radius: 20px 0px 20px 0px;
+        margin: 1rem 1rem;
+        width: 50%;
+        font-size: 1.2rem;
+        height: 6vh;
+        cursor: pointer;
+    }
+
+    .btn:active {
+        background-color: #d90d0d;
+    }
+
+    .card {
+        border: 2px solid white;
+        /* padding: 1rem; */
+        display: flex;
+        /* height: 50vh; */
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: max-content;
+        /* height: max-content; */
+        justify-content: center;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+        margin-top: 1rem;
+        border: 1px solid;
+        cursor: pointer;
+    }
+
+    .cardBox {
+        /* border: 1px solid; */
+        padding: 1rem;
+        /* width: 60%; */
+    }
+
+    .card:hover {
+        border: 1px solid rgb(125, 125, 125);
+        background-color: rgba(253, 114, 0, 0.2);
+        box-shadow: 0px 0px 5px 5px rgb(255, 165, 56);
+
+    }
+
+    .imgBox {
+        border: 0px solid rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+    }
+
+    .hotelName {
+        /* border: 1px solid; */
+        width: 15rem;
+        height: 8vh;
+    }
+
+    .img {
+        border: 1px solid;
+        border-radius: 10px;
+        margin: auto;
+        width: 220px;
+        height: 180px;
+    }
+
+    .cuisinesWrap {
+        /* border: 1px solid; */
+        display: flex;
+        gap: 0.2rem;
+        /* width: 100%; */
+    }
+
+    .cuisines {
+        /* display: flex; */
+        flex-direction: row;
+        font-size: 0.8rem;
+        color: rgb(134, 134, 134);
+        text-shadow: 0.8px 0.8px black;
+        width: max-content;
+    }
+
+    .mainFotter {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5;
+    }
+
+    .avgPriceWrap {
+        /* border: 1px solid; */
+        display: flex;
+        gap: 1rem;
+        /* justify-content: space-between; */
+        padding: 0.5rem;
+    }
+
+    .avgRating {
+        /* border: 1px solid; */
+        color: white;
+        background-color: #db7c38;
+        /* width: 3rem; */
+    }
+
+    .avgRatingTwo {
+        /* border: 1px solid; */
+        color: white;
+        background-color: #48c479;
+    }
+
+    .iconPercent {
+        font-size: 1.5rem;
+    }
+
+    .offers {
+        display: flex;
+        gap: 0.3rem;
+        align-items: center;
+        color: #8a584b;
+        font-weight: 600;
+    }
+
+    .offers span {
+        font-size: 0.9rem;
+    }
+
+    .price {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width : 850px) {
+    .btnBox {
+        margin-top: 7rem;
+        display: flex;
+    }
+
+    .city {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        /* margin: 3rem; */
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        margin-left: 3rem;
+
+
+        /* padding: 2rem 5rem 2rem 5rem; */
+        /* border: 1px solid; */
+        /* gap: 1rem; */
+        /* padding: 2rem; */
+    }
+
+    .btn {
+        background-color: #d97d0d;
+        color: white;
+        /* border:; */
+        border-radius: 20px 0px 20px 0px;
+        margin: 1rem 1rem;
+        width: 50%;
+        font-size: 1.2rem;
+        height: 6vh;
+        cursor: pointer;
+    }
+
+    .btn:active {
+        background-color: #d90d0d;
+    }
+
+    .card {
+        border: 2px solid white;
+        /* padding: 1rem; */
+        display: flex;
+        /* height: 50vh; */
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: max-content;
+        /* height: max-content; */
+        justify-content: center;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+        margin-top: 1rem;
+        border: 1px solid;
+        cursor: pointer;
+    }
+
+    .cardBox {
+        /* border: 1px solid; */
+        padding: 1rem;
+        /* width: 60%; */
+    }
+
+    .card:hover {
+        border: 1px solid rgb(125, 125, 125);
+        background-color: rgba(253, 114, 0, 0.2);
+        box-shadow: 0px 0px 5px 5px rgb(255, 165, 56);
+
+    }
+
+    .imgBox {
+        border: 0px solid rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+    }
+
+    .hotelName {
+        /* border: 1px solid; */
+        width: 15rem;
+        height: 8vh;
+    }
+
+    .img {
+        border: 1px solid;
+        border-radius: 10px;
+        margin: auto;
+        width: 220px;
+        height: 180px;
+    }
+
+    .cuisinesWrap {
+        /* border: 1px solid; */
+        display: flex;
+        gap: 0.2rem;
+        /* width: 100%; */
+    }
+
+    .cuisines {
+        /* display: flex; */
+        flex-direction: row;
+        font-size: 0.8rem;
+        color: rgb(134, 134, 134);
+        text-shadow: 0.8px 0.8px black;
+        width: max-content;
+    }
+
+    .mainFotter {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5;
+    }
+
+    .avgPriceWrap {
+        /* border: 1px solid; */
+        display: flex;
+        gap: 1rem;
+        /* justify-content: space-between; */
+        padding: 0.5rem;
+    }
+
+    .avgRating {
+        /* border: 1px solid; */
+        color: white;
+        background-color: #db7c38;
+        /* width: 3rem; */
+    }
+
+    .avgRatingTwo {
+        /* border: 1px solid; */
+        color: white;
+        background-color: #48c479;
+    }
+
+    .iconPercent {
+        font-size: 1.5rem;
+    }
+
+    .offers {
+        display: flex;
+        gap: 0.3rem;
+        align-items: center;
+        color: #8a584b;
+        font-weight: 600;
+    }
+
+    .offers span {
+        font-size: 0.9rem;
+    }
+
+    .price {
+        font-size: 0.8rem;
+    }
+
+}
+@media screen and (max-width : 850px){
+    .btnBox {
+        margin-top: 7rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        justify-content: center;
+        margin-left: 2rem;
+
+    }
+
+    .city {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: auto;
+        justify-content: center;
+        /* margin: 3rem; */
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        margin-left: 3rem;
+
+
+        /* padding: 2rem 5rem 2rem 5rem; */
+        /* border: 1px solid; */
+        /* gap: 1rem; */
+        /* padding: 2rem; */
+    }
+
+    .btn {
+        background-color: #d97d0d;
+        color: white;
+        /* border:; */
+        border-radius: 20px 0px 20px 0px;
+        margin: 1rem 1rem;
+        width: 50%;
+        font-size: 1.2rem;
+        height: 6vh;
+        cursor: pointer;
+    }
+
+    .btn:active {
+        background-color: #d90d0d;
+    }
+
+    .card {
+        border: 2px solid white;
+        /* padding: 1rem; */
+        display: flex;
+        /* height: 50vh; */
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: max-content;
+        /* height: max-content; */
+        justify-content: center;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+        margin-top: 1rem;
+        border: 1px solid;
+        cursor: pointer;
+    }
+
+    .cardBox {
+        /* border: 1px solid; */
+        padding: 1rem;
+        /* width: 60%; */
+    }
+
+    .card:hover {
+        border: 1px solid rgb(125, 125, 125);
+        background-color: rgba(253, 114, 0, 0.2);
+        box-shadow: 0px 0px 5px 5px rgb(255, 165, 56);
+
+    }
+
+    .imgBox {
+        border: 0px solid rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+    }
+
+    .hotelName {
+        /* border: 1px solid; */
+        width: 15rem;
+        height: 8vh;
+    }
+
+    .img {
+        border: 1px solid;
+        border-radius: 10px;
+        margin: auto;
+        width: 220px;
+        height: 180px;
+    }
+
+    .cuisinesWrap {
+        /* border: 1px solid; */
+        display: flex;
+        gap: 0.2rem;
+        /* width: 100%; */
+    }
+
+    .cuisines {
+        /* display: flex; */
+        flex-direction: row;
+        font-size: 0.8rem;
+        color: rgb(134, 134, 134);
+        text-shadow: 0.8px 0.8px black;
+        width: max-content;
+    }
+
+    .mainFotter {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5;
+    }
+
+    .avgPriceWrap {
+        /* border: 1px solid; */
+        display: flex;
+        gap: 1rem;
+        /* justify-content: space-between; */
+        padding: 0.5rem;
+    }
+
+    .avgRating {
+        /* border: 1px solid; */
+        color: white;
+        background-color: #db7c38;
+        /* width: 3rem; */
+    }
+
+    .avgRatingTwo {
+        /* border: 1px solid; */
+        color: white;
+        background-color: #48c479;
+    }
+
+    .iconPercent {
+        font-size: 1.5rem;
+    }
+
+    .offers {
+        display: flex;
+        gap: 0.3rem;
+        align-items: center;
+        color: #8a584b;
+        font-weight: 600;
+    }
+
+    .offers span {
+        font-size: 0.9rem;
+    }
+
+    .price {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width : 850px) {
+    .btnBox {
+        margin-top: 7rem;
+        display: flex;
+    }
+
+    .city {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        /* margin: 3rem; */
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        margin-left: 3rem;
+
+
+        /* padding: 2rem 5rem 2rem 5rem; */
+        /* border: 1px solid; */
+        /* gap: 1rem; */
+        /* padding: 2rem; */
+    }
+
+    .btn {
+        background-color: #d97d0d;
+        color: white;
+        /* border:; */
+        border-radius: 20px 0px 20px 0px;
+        margin: 1rem 1rem;
+        width: 50%;
+        font-size: 1.2rem;
+        height: 6vh;
+        cursor: pointer;
+    }
+
+    .btn:active {
+        background-color: #d90d0d;
+    }
+
+    .card {
+        border: 2px solid white;
+        /* padding: 1rem; */
+        display: flex;
+        /* height: 50vh; */
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: max-content;
+        /* height: max-content; */
+        justify-content: center;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+        margin-top: 1rem;
+        border: 1px solid;
+        cursor: pointer;
+    }
+
+    .cardBox {
+        /* border: 1px solid; */
+        padding: 1rem;
+        /* width: 60%; */
+    }
+
+    .card:hover {
+        border: 1px solid rgb(125, 125, 125);
+        background-color: rgba(253, 114, 0, 0.2);
+        box-shadow: 0px 0px 5px 5px rgb(255, 165, 56);
+
+    }
+
+    .imgBox {
+        border: 0px solid rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+    }
+
+    .hotelName {
+        /* border: 1px solid; */
+        width: 15rem;
+        height: 8vh;
+    }
+
+    .img {
+        border: 1px solid;
+        border-radius: 10px;
+        margin: auto;
+        width: 220px;
+        height: 180px;
+    }
+
+    .cuisinesWrap {
+        /* border: 1px solid; */
+        display: flex;
+        gap: 0.2rem;
+        /* width: 100%; */
+    }
+
+    .cuisines {
+        /* display: flex; */
+        flex-direction: row;
+        font-size: 0.8rem;
+        color: rgb(134, 134, 134);
+        text-shadow: 0.8px 0.8px black;
+        width: max-content;
+    }
+
+    .mainFotter {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5;
+    }
+
+    .avgPriceWrap {
+        /* border: 1px solid; */
+        display: flex;
+        gap: 1rem;
+        /* justify-content: space-between; */
+        padding: 0.5rem;
+    }
+
+    .avgRating {
+        /* border: 1px solid; */
+        color: white;
+        background-color: #db7c38;
+        /* width: 3rem; */
+    }
+
+    .avgRatingTwo {
+        /* border: 1px solid; */
+        color: white;
+        background-color: #48c479;
+    }
+
+    .iconPercent {
+        font-size: 1.5rem;
+    }
+
+    .offers {
+        display: flex;
+        gap: 0.3rem;
+        align-items: center;
+        color: #8a584b;
+        font-weight: 600;
+    }
+
+    .offers span {
+        font-size: 0.9rem;
+    }
+
+    .price {
+        font-size: 0.8rem;
+    }
+
+}
+@media screen and (max-width : 600px){
+    .btnBox {
+        margin-top: 7rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        margin-left: 2rem;
+
+    }
+
+    .city {
+        text-align: center;
+        font-size: 1.3rem;
+        width: 23rem;
+        font-weight: 500;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: auto;
+        justify-content: center;
+        /* margin: 3rem; */
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        margin-left: -0.6rem;
+
+
+        /* padding: 2rem 5rem 2rem 5rem; */
+        /* border: 1px solid; */
+        /* gap: 1rem; */
+        /* padding: 2rem; */
+    }
+
+    .btn {
+        background-color: #d97d0d;
+        color: white;
+        border-color: #d97d0d ;
+        border-radius: 0.6rem;
+        margin: 1rem 1rem;
+        box-shadow: none;
+        width: 55%;
+        font-size: 1.2rem;
+        height: 6vh;
+        cursor: pointer;
+    }
+
+    .btn:active {
+        background-color: #d90d0d;
+    }
+
+    .card {
+        border: 2px solid white;
+        /* padding: 1rem; */
+        display: flex;
+        /* height: 50vh; */
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: max-content;
+        /* height: max-content; */
+        justify-content: center;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+        margin-top: 1rem;
+        border: 1px solid;
+        cursor: pointer;
+    }
+
+    .cardBox {
+        /* border: 1px solid; */
+        padding: 1rem;
+        /* width: 60%; */
+    }
+
+    .card:hover {
+        border: 1px solid rgb(125, 125, 125);
+        background-color: rgba(253, 114, 0, 0.2);
+        box-shadow: 0px 0px 5px 5px rgb(255, 165, 56);
+
+    }
+
+    .imgBox {
+        border: 0px solid rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+    }
+
+    .hotelName {
+        /* border: 1px solid; */
+        width: 15rem;
+        height: 8vh;
+    }
+
+    .img {
+        border: 1px solid;
+        border-radius: 10px;
+        margin: auto;
+        width: 220px;
+        height: 180px;
+    }
+
+    .cuisinesWrap {
+        /* border: 1px solid; */
+        display: flex;
+        gap: 0.2rem;
+        /* width: 100%; */
+    }
+
+    .cuisines {
+        /* display: flex; */
+        flex-direction: row;
+        font-size: 0.8rem;
+        color: rgb(134, 134, 134);
+        text-shadow: 0.8px 0.8px black;
+        width: max-content;
+    }
+
+    .mainFotter {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5;
+    }
+
+    .avgPriceWrap {
+        /* border: 1px solid; */
+        display: flex;
+        gap: 1rem;
+        /* justify-content: space-between; */
+        padding: 0.5rem;
+    }
+
+    .avgRating {
+        /* border: 1px solid; */
+        color: white;
+        background-color: #db7c38;
+        /* width: 3rem; */
+    }
+
+    .avgRatingTwo {
+        /* border: 1px solid; */
+        color: white;
+        background-color: #48c479;
+    }
+
+    .iconPercent {
+        font-size: 1.5rem;
+    }
+
+    .offers {
+        display: flex;
+        gap: 0.3rem;
+        align-items: center;
+        color: #8a584b;
+        font-weight: 600;
+    }
+
+    .offers span {
+        font-size: 0.9rem;
+    }
+
+    .price {
+        font-size: 0.8rem;
+    }
+    .hotelMainBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

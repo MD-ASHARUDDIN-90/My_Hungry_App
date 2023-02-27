@@ -148,3 +148,33 @@ margin: 0.5rem;
     color: #ffffff;
     text-shadow: 1px 1px black;
 }
+
+
+@media only screen and (max-width: 830px)   {
+    .restroInfo{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .rating{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2vh;
+        padding: 3vw;
+    }
+    .restroName{
+        text-align: center;
+    }
+    .offer{
+        text-align: center;
+        width: fit-content;
+    }
+    .offerTxt{
+        text-align: center;
+    }
+     
+    }
