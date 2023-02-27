@@ -26,7 +26,7 @@ export default function HelpPage() {
         <p>Let's take a step ahead and help you better.</p>
       { list.map((x, i) => (
         <>
-          <div key={i}>
+          <div key={x.ans}>
             <div
               onClick={() => {
                 handleClick(x,i);

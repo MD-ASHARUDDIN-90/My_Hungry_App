@@ -49,7 +49,7 @@ export default function SearchFoodPage() {
         {!value ? (
           <div className={style.imagesList}>
             {images.map((x, i) => (
-              <span key={i}>
+              <span key={x.image}>
                 <img
                   className={style.images}
                   width=""
