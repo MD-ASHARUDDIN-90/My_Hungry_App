@@ -66,3 +66,33 @@ color: rgb(255, 255, 255 ,0.8);
     /* border: 1px solid salmon; */
     margin-top: 5rem;
 }
+.imageback{
+    width: 800px;
+    height: 700px;
+}
+.liveOrderTrack{
+  width: 100%;
+}
+
+@media only screen and (max-width: 1440px)   {
+    .imageback{
+        display: none;
+    }
+    .liveOrderTrack{
+        display: none;
+       }
+       .app{
+        display: none;
+       }
+       
+    }
+  
+@media only screen and (max-width: 700px)   {
+    .imageback{
+       display : none
+    }
+    .liveOrderTrack{
+     display: none;
+    }
+
+}

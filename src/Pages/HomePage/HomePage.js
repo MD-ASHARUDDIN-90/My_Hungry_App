@@ -13,7 +13,7 @@ export default function HomePage(){
         <div className={style.up}>
         <HomeModal />
         <div>
-        <img width="680px" height="553px" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Lunch1_vlksgq" alt="" />
+        <img className={style.imageback} width="680px" height="553px" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Lunch1_vlksgq" alt="" />
         </div>
         </div>
 
