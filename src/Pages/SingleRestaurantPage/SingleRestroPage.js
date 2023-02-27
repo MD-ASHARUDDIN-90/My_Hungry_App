@@ -8,16 +8,8 @@ import style from "./SingleRestro.module.css";
 import { cartItem } from "../../Recoil/Recoil";
 import { useSetRecoilState } from "recoil";
 export default function SingleRestroPage() {
-  const [name, setName] = useState("Welcome To Hungry");
+
   const [restroInfo, setRestroInfo] = useState({});
-  const [city, setCity] = useState("");
-  const [img, setImg] = useState("");
-  const [rating, setRating] = useState("");
-  const [starRating, setStarRating] = useState("");
-  const [area, setArea] = useState("");
-  const [costTwo, setCostTwo] = useState("");
-  const [deleveryTime, setDeliveryTime] = useState("");
-  const [discount, setDiscount] = useState([]);
   const [all, setAll] = useState([]);
   const [cart, setCart] = useState([]);
   const setCartList = useSetRecoilState(cartItem); //n
