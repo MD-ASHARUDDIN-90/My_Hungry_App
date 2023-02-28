@@ -2,6 +2,18 @@
 This project is based on food ordering website (Front-End Part) with some live Api Call of Swiggy Website
 ## Website Link =>  https://my-hungry-app.vercel.app/
 
+## Project Overview
+
+1. This Project is based on a food order website where you can search your place with getting suggestions of your places. Also when you click you will dynamically get all your nearest hotel details in your hand.
+2. You can also use Locate - ME features if your device supports geo-location 
+then by clicking this you can fetch all the nearest restaurants based on your location.
+3. Debouncing used on input box api call.
+4. You can also filter out restaurants based on veg,non veg,ratings.
+5. You can also route to a particular restaurant to see menu items.
+6. You can add foods in your cart and can redirect to the cart page to see the total price where you can also remove items from cart.
+7. Accordion added in the Help Page option in the Nav bar.(without any 3rd party library)
+8. In the Search bar option in nav bar you will redirect to the search for food page where you can dynamically search food items like maggi, gulab jamun, and after clicking on the food item got in the result an alert will be shown that you have clicked the item and your bucket list is now 1,2,3 and so on.
+9. Pages are mobile responsive as well.
 
 ## Api References 
 1.   `https://www.swiggy.com/dapi/misc/place-autocomplete?input=${search}&types=`
