@@ -1,6 +1,7 @@
 # About
 This project is based on food ordering website (Front-End Part) with some live Api Call of Swiggy Website
 ## Website Link =>  https://my-hungry-app.vercel.app/
+## Website Link =>  https://legendary-pony-54df66.netlify.app/
 
 ## Note 
 You have to enable the CORS(Cross Over Origin) extension in your chrome also toggle it ON so that all the functionality can run smoothly.
