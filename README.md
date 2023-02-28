@@ -2,6 +2,8 @@
 This project is based on food ordering website (Front-End Part) with some live Api Call of Swiggy Website
 ## Website Link =>  https://my-hungry-app.vercel.app/
 
+## Note 
+You have to enable the CORS(Cross Over Origin) extension in your chrome also toggle it ON so that all the functionality can run smoothly.
 ## Project Overview
 
 1. This Project is based on a food order website where you can search your place with getting suggestions of your places. Also when you click you will dynamically get all your nearest hotel details in your hand.
@@ -21,11 +23,11 @@ then by clicking this you can fetch all the nearest restaurants based on your lo
 3.   `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${latitude}&lng=${longitude}&page_type=DESKTOP_WEB_LISTING`
 4.   `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${latitude}&lng=${longitude}&page_type=DESKTOP_WEB_LISTING`
 
-## Debouncing used in this Api calls
-## Responsive WebPage
-## Cart Page
-## Restaurants Search
-## Restaurants Menu Items.
+1. Debouncing used in this Api calls
+2. Responsive WebPage
+3. Cart Page
+4. Restaurants Search
+5. Restaurants Menu Items.
 
 
 ## Getting Started with Create React App
