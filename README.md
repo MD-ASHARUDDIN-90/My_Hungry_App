@@ -29,6 +29,9 @@ then by clicking this you can fetch all the nearest restaurants based on your lo
 4. Restaurants Search
 5. Restaurants Menu Items.
 
+## About Me
+Hello...!
+My name is MD Asharuddin. I am from Asansol West Bengal. I have completed my B-Tech in Mechanincal Engineering. I have working experience of 1.5 years. But I want to explore this Real Tech world as this industry is very huge.
 
 ## Getting Started with Create React App
 
