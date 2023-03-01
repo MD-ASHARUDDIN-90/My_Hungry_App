@@ -1,10 +1,21 @@
 import HomeModal from "../../Component/HomeModal/HomeModal";
 import style from './HomePage.module.css'
 import Footer from "../../Component/Footer/Footer";
+import { ImCross } from 'react-icons/im';
+import { useEffect, useState } from "react";
 export default function HomePage(){
+    const [show , setShow] = useState(false)
+
+      
     
+ 
+   
+    function handleCross() {
+       setShow(true)
+    }
     return(
         <>
+        <div style={{width : "100%" , textAlign : "center",position : "absolute" , display: "flex" , alignItems: "center" , gap:"2rem" , backgroundColor :"#fc8019" , borderRadius :"10px" }}>{!show ?<><h3>You Have to enable Cors Extension in google chrome </h3 > <ImCross onClick={handleCross}/></> : ""}</div>
         <div className={style.up}>
         <HomeModal />
         <div>
