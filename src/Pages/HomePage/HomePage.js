@@ -15,7 +15,7 @@ export default function HomePage(){
     }
     return(
         <>
-        <div style={{width : "100%" , textAlign : "center",position : "absolute" , display: "flex" , alignItems: "center" , gap:"2rem" , backgroundColor :"#fc8019" , borderRadius :"10px" }}>{!show ?<><h3>You Have to enable Cors Extension in google chrome </h3 > <ImCross onClick={handleCross}/></> : ""}</div>
+        {!show ? <div className={style.warning}><><h3>You have to enable "CORS" Extension in google chrome to run everything smoothly... </h3 > <ImCross onClick={handleCross}/></> </div>: ""}
         <div className={style.up}>
         <HomeModal />
         <div>
