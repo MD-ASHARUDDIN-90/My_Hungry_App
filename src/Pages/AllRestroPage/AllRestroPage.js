@@ -128,7 +128,7 @@ export default function AllRestroPages() {
                     <CiPercent className={style.iconPercent} />
                     <span>
                       {
-                        x.data.aggregatedDiscountInfo.shortDescriptionList[0]
+                        x.data.aggregatedDiscountInfo?.shortDescriptionList[0]
                           .meta
                       }
                     </span>
